@@ -1,0 +1,164 @@
+[
+    {
+        "id": 1,
+        "parfym": "Chanel No. 5",
+        "doftnot": ["aldehyder", "jasmin", "neroli", "sandellträ", "vanilj"]
+    },
+    {
+        "id": 2,
+        "parfym": "Dior J'adore",
+        "doftnot": ["ylang-ylang", "ros", "jasmin", "musk", "bergamott"]
+    },
+    {
+        "id": 3,
+        "parfym": "Giorgio Armani Si",
+        "doftnot": ["svarta vinbär", "ros", "freisia", "patchouli", "vanilj"]
+    },
+    {
+        "id": 4,
+        "parfym": "Yves Saint Laurent Black Opium",
+        "doftnot": ["kaffe", "päron", "jasmin", "vanilj", "cederträ"]
+    },
+    {
+        "id": 5,
+        "parfym": "Marc Jacobs Daisy",
+        "doftnot": ["jordgubb", "violblad", "jasmin", "vanilj", "musk"]
+    },
+    {
+        "id": 6,
+        "parfym": "Lancôme La Vie Est Belle",
+        "doftnot": ["päron", "iris", "apelsinblomma", "jasmin", "patchouli"]
+    },
+    {
+        "id": 7,
+        "parfym": "Chanel Coco Mademoiselle",
+        "doftnot": ["apelsin", "mandarin", "jasmin", "patchouli", "vanilj"]
+    },
+    {
+        "id": 8,
+        "parfym": "Tom Ford Black Orchid",
+        "doftnot": [
+            "tryffel",
+            "ylang-ylang",
+            "svarta vinbär",
+            "choklad",
+            "vanilj"
+        ]
+    },
+    {
+        "id": 9,
+        "parfym": "Dior Sauvage",
+        "doftnot": ["bergamott", "peppar", "lavendel", "ambroxan", "vanilj"]
+    },
+    {
+        "id": 10,
+        "parfym": "Viktor & Rolf Flowerbomb",
+        "doftnot": ["bergamott", "ros", "jasmin", "patchouli", "vanilj"]
+    },
+    {
+        "id": 11,
+        "parfym": "Hermès Terre d'Hermès",
+        "doftnot": ["apelsin", "peppar", "patchouli", "cederträ", "benzoin"]
+    },
+    {
+        "id": 12,
+        "parfym": "Gucci Bloom",
+        "doftnot": ["tuberose", "jasmin", "rangoon creeper", "musk", "iris"]
+    },
+    {
+        "id": 13,
+        "parfym": "Dolce & Gabbana Light Blue",
+        "doftnot": ["citrus", "äpple", "bambu", "jasmin", "cypress"]
+    },
+    {
+        "id": 14,
+        "parfym": "Calvin Klein Euphoria",
+        "doftnot": [
+            "granatäpple",
+            "lotusblomma",
+            "svart orkidé",
+            "amber",
+            "mahogny"
+        ]
+    },
+    {
+        "id": 15,
+        "parfym": "Jean Paul Gaultier Le Male",
+        "doftnot": ["lavendel", "mynta", "kanel", "vanilj", "cederträ"]
+    },
+    {
+        "id": 16,
+        "parfym": "Creed Aventus",
+        "doftnot": ["ananas", "svarta vinbär", "bergamott", "äpple", "musk"]
+    },
+    {
+        "id": 17,
+        "parfym": "Versace Eros",
+        "doftnot": ["mynta", "äpple", "citrus", "tonkabönor", "vanilj"]
+    },
+    {
+        "id": 18,
+        "parfym": "Bvlgari Man in Black",
+        "doftnot": ["rom", "kanel", "tobak", "läder", "amber"]
+    },
+    {
+        "id": 19,
+        "parfym": "Burberry Her",
+        "doftnot": ["jordgubb", "hallon", "körsbär", "musk", "patchouli"]
+    },
+    {
+        "id": 20,
+        "parfym": "Paco Rabanne 1 Million",
+        "doftnot": ["kanel", "blodapelsin", "amber", "patchouli", "läder"]
+    },
+    {
+        "id": 21,
+        "parfym": "Prada Candy",
+        "doftnot": ["musk", "vanilj", "karamell", "bensoaresin", "citrus"]
+    },
+    {
+        "id": 22,
+        "parfym": "Narciso Rodriguez For Her",
+        "doftnot": ["musk", "jasmin", "apelsinblomma", "vanilj", "patchouli"]
+    },
+    {
+        "id": 23,
+        "parfym": "Byredo Gypsy Water",
+        "doftnot": ["bergamott", "citrus", "peppar", "vanilj", "sandellträ"]
+    },
+    {
+        "id": 24,
+        "parfym": "Le Labo Santal 33",
+        "doftnot": ["sandellträ", "cypress", "läder", "musk", "iris"]
+    },
+    {
+        "id": 25,
+        "parfym": "Chanel Bleu de Chanel",
+        "doftnot": ["citrus", "peppar", "mint", "tonkabönor", "amber"]
+    },
+    {
+        "id": 26,
+        "parfym": "Mugler Alien",
+        "doftnot": ["jasmin", "amber", "tränoter", "musk", "cashmeran"]
+    },
+    {
+        "id": 27,
+        "parfym": "Maison Margiela Replica Jazz Club",
+        "doftnot": ["rom", "tobak", "vanilj", "läder", "citrus"]
+    },
+    {
+        "id": 28,
+        "parfym": "Jo Malone Wood Sage & Sea Salt",
+        "doftnot": ["salvia", "havssalt", "amber", "citron", "musk"]
+    },
+    {
+        "id": 29,
+        "parfym": "Dior Homme Intense",
+        "doftnot": ["iris", "ambrette", "lavendel", "musk", "cederträ"]
+    },
+    {
+        "id": 30,
+        "parfym": "Chloé Nomade",
+        "doftnot": ["mirabelle", "freesia", "musk", "ekmossa", "amber"]
+    }
+]
