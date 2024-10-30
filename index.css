@@ -37,6 +37,47 @@ body {
     margin-bottom: 5000px;
 }
 
+.rubriker {
+    display: flex;
+    justify-content: center;
+    font-family: MyFont;
+}
+
+.toppnoter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+button {
+    border-radius: 10px;
+    background-color: #826161;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+/* footer {
+    padding: 20px;
+    margin-bottom: 0;
+    background-color: blue;
+} */
+
 #headerLogo {
     width: 1000px;
     height: 1000px;
