@@ -7,34 +7,53 @@
     src: url(Quinsi.ttf);
 }
 
-header {
-    background-color: #3c2225;
-    background-size: cover;
-}
-
-#menu {
-    font-family: MyFont;
-    font-size: large;
-    color: antiquewhite;
-    background-color: #916066;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    justify-content: space-around;
-    align-items: stretch;
-    padding-bottom: 5px;
-    margin-top: -100px;
-}
-
 html,
 body {
     margin: 0;
     padding: 0;
     background-color: rgb(255, 246, 234);
+    height: 100%;
+}
+
+header {
+    background-color: #3c2225;
+    background-size: cover;
+}
+
+.menu {
+    background-color: #916066;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 5px 0;
+}
+
+.menu a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.menu a:visited {
+    color: antiquewhite;
+}
+
+.menu a:hover {
+    color: rgb(237, 202, 159);
+}
+
+ul {
+    font-family: MyFont;
+    display: flex;
+    list-style: none; /* Tar bort punktmarkeringarna */
+    text-decoration: none;
+    gap: 5rem; /* Ger lite avstånd mellan menypunkterna */
+    font-size: large;
 }
 
 body {
-    margin-bottom: 5000px;
+    margin: 0;
+    padding: 0;
 }
 
 .rubriker {
@@ -43,13 +62,30 @@ body {
     font-family: MyFont;
 }
 
-.toppnoter {
+.container {
+    background-color: rgb(255, 246, 234);
+}
+
+#cards-container {
+    background-color: rgb(255, 246, 234);
+    padding: 20px;
+}
+
+.card {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* .toppnoter {
     display: flex;
+    flex: 0 0 1000px;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 100px;
-    margin-left: 500px;
-    margin-right: 500px;
 }
 
 button {
@@ -70,13 +106,12 @@ button {
 
 button:hover {
     opacity: 1;
-}
-
-/* footer {
-    padding: 20px;
-    margin-bottom: 0;
-    background-color: blue;
 } */
+
+footer {
+    padding: 20px;
+    background-color: blue;
+}
 
 #headerLogo {
     width: 1000px;
