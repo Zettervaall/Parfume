@@ -14,21 +14,32 @@ async function fetchAndDisplayCards() {
         const response = await fetch(apiUrl);
         const data = await response.json();
 
+        // Sökvägen till bilderna
+        const basePath = '/Media/';
+
         // Hitta container där korten ska visas
         const container = document.getElementById('cards-container');
 
         // Gå igenom varje parfym och skapa kort för varje
         data.forEach((item) => {
+            // Generera URL för bild om bild finns
+            const imageUrl = item.bild ? basePath + item.bild : '';
+
             // Skapa en div för kortet
             const card = document.createElement('div');
             card.className = 'col-md-4 mb-4'; // Bootstrap-klasser för layout
 
-            // Fyll kortet med parfymens namn och doftnoter
+            // Fyll kortet med parfymens bild, namn och doftnoter
             card.innerHTML = `
                 <div class="card">
+                    ${
+                        imageUrl
+                            ? `<img src="${imageUrl}" class="card-img-top" alt="${item.parfym} bild">`
+                            : ''
+                    }
                     <div class="card-body">
                         <h5 class="card-title">${item.parfym}</h5>
-                        <p class="card-text">${item.doftnot}</p>
+                        <p class="card-text">${item.doftnot.join(', ')}</p>
                     </div>
                 </div>
             `;

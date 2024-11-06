@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "bild": "1.jpg",
         "parfym": "Chanel No. 5",
         "doftnot": ["aldehydes", "jasmine", "neroli", "sandalwood", "vanilla"]
     },
