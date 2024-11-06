@@ -4,13 +4,13 @@
         console.log(result);
     }); */
 
-// URL till JSON-data
+// URL till json
 const apiUrl = 'index.json';
 
 // Funktion för att hämta data och skapa kort
 async function fetchAndDisplayCards() {
     try {
-        // Hämta data från JSON-url
+        // Hämta data från json-fil
         const response = await fetch(apiUrl);
         const data = await response.json();
 
