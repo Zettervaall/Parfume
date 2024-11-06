@@ -7,26 +7,31 @@
     },
     {
         "id": 2,
+        "bild": "2.jpg",
         "parfym": "Dior J'adore",
         "doftnot": ["ylang-ylang", "rose", "jasmine", "musk", "bergamot"]
     },
     {
         "id": 3,
+        "bild": "3.jpg",
         "parfym": "Giorgio Armani Si",
         "doftnot": ["black currant", "rose", "freesia", "patchouli", "vanilla"]
     },
     {
         "id": 4,
+        "bild": "4.jpg",
         "parfym": "Yves Saint Laurent Black Opium",
         "doftnot": ["coffee", "pear", "jasmine", "vanilla", "cedarwood"]
     },
     {
         "id": 5,
+        "bild": "5.jpg",
         "parfym": "Marc Jacobs Daisy",
         "doftnot": ["strawberry", "violet leaf", "jasmine", "vanilla", "musk"]
     },
     {
         "id": 6,
+        "bild": "6.jpg",
         "parfym": "Lancôme La Vie Est Belle",
         "doftnot": ["pear", "iris", "orange blossom", "jasmine", "patchouli"]
     },

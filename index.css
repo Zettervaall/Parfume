@@ -12,11 +12,14 @@ body {
 }
 
 header {
-    background-color: #e0981c;
+    background-color: #3c2225;
     background-size: cover;
     margin: 0;
     padding: 0;
 }
+
+/* fin färg
+background-color: #e0981c; */
 
 #headerLogo {
     display: flex;
@@ -36,12 +39,13 @@ body > header > a > img {
     flex-direction: row;
     justify-content: space-around;
     align-items: stretch;
-    padding: 5px 0;
+    padding: 15px 0;
 }
 
 .menu a {
     color: antiquewhite;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .menu a:visited {
@@ -86,6 +90,17 @@ body {
     font-family: MyFont;
 }
 
+body > div > h1 {
+    display: flex;
+    justify-content: center;
+    font-family: MyFont;
+    font-size: 55px;
+}
+
+body > div > p {
+    font-size: 20px;
+}
+
 #carouselExampleSlidesOnly {
     padding-top: 100px;
 }
@@ -95,17 +110,26 @@ body {
 }
 
 #cards-container {
+    margin: auto;
     background-color: rgb(255, 246, 234);
-    padding: 20px;
 }
 
 .card {
-    background-color: transparent;
+    background-color: rgb(255, 255, 255);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    margin: 10px;
-    padding: 20px;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+}
+
+.card-body {
+    font-family: MyFont;
+    padding: 5px;
 }
 
 /* .toppnoter {
