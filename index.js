@@ -27,18 +27,20 @@ async function fetchAndDisplayCards() {
 
             // Skapa en div för kortet
             const card = document.createElement('div');
-            card.className = 'col-md-4 mb-4'; // Bootstrap-klasser för layout
+            card.className = 'col'; // Bootstrap-klasser för layout
 
             // Fyll kortet med parfymens bild, namn och doftnoter
             card.innerHTML = `
-                <div class="card">
+                <div class="card h-100">
                     ${
                         imageUrl
                             ? `<img src="${imageUrl}" class="card-img-top" alt="${item.parfym} bild">`
                             : ''
                     }
                     <div class="card-body">
-                        <h5 class="card-title">${item.parfym}</h5>
+                        <h5 class="card-title"><strong>${
+                            item.parfym
+                        }</strong></h5>
                         <p class="card-text">${item.doftnot.join(', ')}</p>
                     </div>
                 </div>
