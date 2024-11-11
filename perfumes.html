@@ -5,37 +5,88 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="index.css" />
         <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
             rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
-            integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
             crossorigin="anonymous"
         />
-        <title>Fragrance</title>
+
+        <title>la senteur | perfumes</title>
         <script src="index.js"></script>
     </head>
     <body class="element">
         <header>
             <a href="index.html"
-                ><img id="headerLogo" src="Media/LaSenteur.png" alt="Logo"
+                ><img id="headerLogo" src="Media/LaSenteur_3.png" alt="Logo"
             /></a>
 
-            <div class="menu">
-                <ul>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="fragrance.html">fragrances</a></li>
-                    <li><a href="perfumes.html">perfumes</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                </ul>
-            </div>
+            <nav>
+                <div class="navBar">
+                    <a href="index.html"
+                        ><img src="Media/LaSenteur_black.png" alt=""
+                    /></a>
+                    <a class="blackText" href="about.html">about</a>
+                    <a class="blackText" href="perfumes.html">perfumes</a>
+                    <a class="blackText" href="contact.html">contact</a>
+                </div>
+            </nav>
+
+            <!-- <nav
+                class="navbar navbar-expand-lg bg-body-tertiary"
+                class="navBar"
+            >
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"
+                        ><img src="Media/LaSenteur_black.png" alt=""
+                    /></a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarNavAltMarkup"
+                    >
+                        <div class="navbar-nav" class="navBar">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="about.html"
+                                >about</a
+                            >
+                            <a class="nav-link" href="perfumes.html"
+                                >perfumes</a
+                            >
+                            <a class="nav-link" href="contact.html">contact</a>
+                             <a class="nav-link disabled" aria-disabled="true"
+                                    >Disabled</a
+                                >
+                        </div>
+                    </div>
+                </div>
+            </nav> -->
         </header>
+
+        <div class="border"></div>
+
+        <!-- <video autoplay loop muted class="background-video">
+            <source src="Media/AdobeStock_479399723.avi" type="video" />
+            Din webbläsare stödjer inte videouppspelning.
+        </video> -->
 
         <!-- test bootstrap cards -->
         <div class="container my-4">
-            <h1>Våra parfymer</h1>
-            <div
-                id="cards-container"
-                class="row row-cols-3 row-cols-md-3 g-4"
-            ></div>
+            <h1>perfumes</h1>
+            <div id="cards-container" class="row justify-content-center">
+                <!-- JavaScript genererar kort här -->
+            </div>
         </div>
 
         <!-- end test bootstrap cards -->
@@ -51,10 +102,12 @@
         <script src="index.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
             crossorigin="anonymous"
         ></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
             crossorigin="anonymous"
         ></script>
 

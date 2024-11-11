@@ -19,6 +19,7 @@ async function fetchAndDisplayCards() {
 
         // Hitta container där korten ska visas
         const container = document.getElementById('cards-container');
+        /* const container = document.getElementById('cards-row'); */
 
         // Gå igenom varje parfym och skapa kort för varje
         data.forEach((item) => {
@@ -27,14 +28,16 @@ async function fetchAndDisplayCards() {
 
             // Skapa en div för kortet
             const card = document.createElement('div');
-            card.className = 'col'; // Bootstrap-klasser för layout
+
+            /* card.className = 'col'; */ // Bootstrap-klasser för layout
+            card.className = 'col-md-3 mb-3';
 
             // Fyll kortet med parfymens bild, namn och doftnoter
             card.innerHTML = `
                 <div class="card h-100">
                     ${
                         imageUrl
-                            ? `<img src="${imageUrl}" class="card-img-top" alt="${item.parfym} bild">`
+                            ? `<img src="${imageUrl}" class="card-img-top" class="my-card-img" alt="${item.parfym} bild">`
                             : ''
                     }
                     <div class="card-body">

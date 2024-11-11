@@ -8,97 +8,164 @@
     src: url(AppleGaramond-Light.ttf);
 }
 
+.element {
+    overflow-x: hidden; /* Gör så att sidan inte kan scrolla i sidled */
+}
+
+/* Grundinställningar för body och bakgrund */
 html,
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 253, 251);
+    background-color: #f9f9f9; /* Bakgrundsfärg för hela sidan */
+    font-family: Arial, sans-serif;
     height: 100%;
 }
 
-header {
-    background-color: #3c2225;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
+/* Header och meny */
+/* body > header > nav > div > img {
+    height: 80px;
+    width: auto;
+    margin: 8px 0 5px 0;
+} */
+
+body > header > nav > div > a:nth-child(1) > img {
+    height: 80px;
+    width: auto;
+    margin: 8px 0 5px 0;
 }
 
-/* fin färg
-background-color: #e0981c; */
-
-#headerLogo {
+.navBar {
+    top: 0;
+    position: fixed;
+    width: 100%;
     display: flex;
-
-    padding: 0;
+    align-items: center;
+    background-color: white;
+    z-index: 1000; /* Ger navbaren högre prioritet så att den är över korten */
+    gap: 20px;
 }
 
-body > header > a > img {
-    height: 1000px;
-    width: 1000px;
-}
-
-.menu {
-    background-color: #916066;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
-    padding: 15px 0;
-}
-
-.menu a {
-    color: antiquewhite;
-    text-decoration: none;
+.navBar a {
+    text-decoration: none; /* Tar bort understrykningen */
+    color: black; /* Färg på texten */
+    font-family: MyFont2;
     font-size: 20px;
 }
 
-.menu a:visited {
-    color: antiquewhite;
+.navBar a:hover {
+    text-decoration: none;
+    color: rgb(237, 202, 159); /* Eventuell färgförändring på hover */
 }
 
-.menu a:hover {
-    color: rgb(237, 202, 159);
+.blackText {
+    color: black;
 }
 
-ul {
-    font-family: MyFont;
+header {
+    background-color: #e9e4df;
+    margin: 0;
+    padding: 0;
+}
+
+/* Rubriker och textcentrering */
+.centerText,
+.rubriker {
     display: flex;
     justify-content: center;
-    list-style: none; /* Tar bort punktmarkeringarna */
-    text-decoration: none;
-    gap: 5rem; /* Ger lite avstånd mellan menypunkterna */
-    padding: 0;
-    font-size: large;
+    font-family: MyFont;
 }
 
-body > header > div > ul {
-    padding: 0;
-    margin: 0;
+#rubrik-notes {
+    display: flex;
+    justify-content: center;
+    font-family: MyFont;
+    font-size: 100px;
+    margin-bottom: 100px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
+body > div > h1 {
+    display: flex;
+    justify-content: center;
+    font-family: MyFont;
+    font-size: 55px;
+    margin: 50px;
 }
 
+.border {
+    padding: 1px;
+    background-color: black;
+}
+
+#quote-dior {
+    display: flex;
+    margin: auto;
+    height: 300px;
+    width: auto;
+}
+
+body > img:nth-child(4) {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 150px;
+}
+
+body > div.container {
+    margin-bottom: 100px;
+}
+
+/* .background-video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 150px;
+} */
+
+.img-fluid {
+    border-radius: 10px;
+}
+
+/* Kortens layout och styling */
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f5f3ef; /* Bakgrundsfärg runt korten */
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 233, 196, 0.1);
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin-bottom: 20px; /* För att skapa mellanrum mellan korten */
+}
+
+.card-img-top {
+    width: 100%; /* Bilden täcker hela kortets bredd */
+    height: 200px; /* Specifik höjd för bilden */
+    object-fit: contain;
+    object-position: center; /* Centrerar bilden inom dess container */
+    padding: 10px; /* Lägger till lite padding för att skapa mellanrum */
+    margin-bottom: 15px; /* Skapar ett mellanrum under bilden */
+    border-radius: 5px 5px 0 0; /* Rundade hörn på toppen av bilden */
+}
+
+.card-body {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Kontakt och layout */
 .contactUs {
     margin: auto;
     width: 500px;
     margin-bottom: 100px;
-}
-
-#centerText {
-    display: flex;
-    justify-content: center;
-    font-family: MyFont;
-}
-
-#quinsi {
-    font-family: MyFont;
-}
-
-#apple {
-    font-family: MyFont2;
 }
 
 #appleCenter {
@@ -110,134 +177,39 @@ body {
     margin-bottom: 80px;
 }
 
-.card-img-top {
-    display: flex;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: auto;
-    height: 200px;
-}
-
-.rubriker {
-    display: flex;
-    justify-content: center;
-    font-family: MyFont;
-}
-
-body > div > h1 {
-    display: flex;
-    justify-content: center;
-    font-family: MyFont;
-    font-size: 55px;
-}
-
-body > div > p {
-    font-size: 20px;
-}
-
-#carouselExampleSlidesOnly {
-    padding-top: 100px;
-}
-
-.container {
-    background-color: transparent;
-}
-
-#cards-container {
-    margin: auto;
-    background-color: rgb(255, 246, 234);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Avstånd mellan korten */
-    margin: auto;
-    background-color: rgb(255, 246, 234);
-}
-
-.card {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    width: 320px;
-    height: 320px;
-    margin-bottom: 20px;
-    gap: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    gap: 10px;
-}
-
-.card-body {
-    font-family: MyFont;
-    padding: 5px;
-}
-
-body > h2 {
-    margin-top: 70px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    font-family: MyFont;
-}
-
-body > div.container > div:nth-child(1) > div.col-md-6.order-md-1 > img {
-    border-radius: 20px;
-}
-
-/* .toppnoter {
-    display: flex;
-    flex: 0 0 1000px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 100px;
-}
-
-button {
-    border-radius: 10px;
-    background-color: #826161;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    opacity: 0.6;
-    transition: 0.3s;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-button:hover {
-    opacity: 1;
-} */
-
+/* Footer */
 footer {
-    padding: 20px;
-    background-color: #916066;
+    padding: 50px;
+    background-color: #e9e4df;
+    /* opacity: 0.8; */
+}
+
+#footer-text {
+    font-family: MyFont2;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: start;
 }
 
 #headerLogo {
-    width: 1000px;
-    height: 1000px;
+    width: 1200px;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-#banner-carousel {
-    width: 100%;
-    overflow: hidden;
-}
-
+/* Bildkarusell-inställningar */
 .carousel-inner {
     width: 100%;
     height: auto;
+    margin-bottom: 200px;
 }
 
 .carousel-item img {
     width: 100%;
-    height: 600px;
+    height: 800px;
     object-fit: cover;
 }
 

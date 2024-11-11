@@ -37,12 +37,13 @@
     },
     {
         "id": 7,
+        "bild": "7.png",
         "parfym": "Chanel Coco Mademoiselle",
         "doftnot": ["orange", "mandarin", "jasmine", "patchouli", "vanilla"]
     },
     {
         "id": 8,
-        "bild": "tomford4.png",
+        "bild": "8.jpg",
         "parfym": "Tom Ford Black Orchid",
         "doftnot": [
             "truffle",
@@ -54,31 +55,37 @@
     },
     {
         "id": 9,
+        "bild": "9.png",
         "parfym": "Dior Sauvage",
         "doftnot": ["bergamot", "pepper", "lavender", "ambroxan", "vanilla"]
     },
     {
         "id": 10,
+        "bild": "10.jpg",
         "parfym": "Viktor & Rolf Flowerbomb",
         "doftnot": ["bergamot", "rose", "jasmine", "patchouli", "vanilla"]
     },
     {
         "id": 11,
+        "bild": "11.jpg",
         "parfym": "Hermès Terre d'Hermès",
         "doftnot": ["orange", "pepper", "patchouli", "cedarwood", "benzoin"]
     },
     {
         "id": 12,
+        "bild": "12.jpg",
         "parfym": "Gucci Bloom",
         "doftnot": ["tuberose", "jasmine", "rangoon creeper", "musk", "iris"]
     },
     {
         "id": 13,
+        "bild": "13.jpg",
         "parfym": "Dolce & Gabbana Light Blue",
         "doftnot": ["citrus", "apple", "bamboo", "jasmine", "cypress"]
     },
     {
         "id": 14,
+        "bild": "14.jpg",
         "parfym": "Calvin Klein Euphoria",
         "doftnot": [
             "pomegranate",
@@ -90,21 +97,25 @@
     },
     {
         "id": 15,
+        "bild": "15.jpg",
         "parfym": "Jean Paul Gaultier Le Male",
         "doftnot": ["lavender", "mint", "cinnamon", "vanilla", "cedarwood"]
     },
     {
         "id": 16,
+        "bild": "16.jpg",
         "parfym": "Creed Aventus",
         "doftnot": ["pineapple", "black currant", "bergamot", "apple", "musk"]
     },
     {
         "id": 17,
+        "bild": "17.jpg",
         "parfym": "Versace Eros",
         "doftnot": ["mint", "apple", "citrus", "tonka beans", "vanilla"]
     },
     {
         "id": 18,
+        "bild": "18.png",
         "parfym": "Bvlgari Man in Black",
         "doftnot": ["rum", "cinnamon", "tobacco", "leather", "amber"]
     },
