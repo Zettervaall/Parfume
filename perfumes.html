@@ -30,48 +30,6 @@
                     <a class="blackText" href="contact.html">contact</a>
                 </div>
             </nav>
-
-            <!-- <nav
-                class="navbar navbar-expand-lg bg-body-tertiary"
-                class="navBar"
-            >
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"
-                        ><img src="Media/LaSenteur_black.png" alt=""
-                    /></a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup"
-                        aria-controls="navbarNavAltMarkup"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div
-                        class="collapse navbar-collapse"
-                        id="navbarNavAltMarkup"
-                    >
-                        <div class="navbar-nav" class="navBar">
-                            <a
-                                class="nav-link active"
-                                aria-current="page"
-                                href="about.html"
-                                >about</a
-                            >
-                            <a class="nav-link" href="perfumes.html"
-                                >perfumes</a
-                            >
-                            <a class="nav-link" href="contact.html">contact</a>
-                             <a class="nav-link disabled" aria-disabled="true"
-                                    >Disabled</a
-                                >
-                        </div>
-                    </div>
-                </div>
-            </nav> -->
         </header>
 
         <div class="border"></div>
@@ -81,24 +39,84 @@
             Din webbläsare stödjer inte videouppspelning.
         </video> -->
 
-        <!-- test bootstrap cards -->
-        <div class="container my-4">
-            <h1>perfumes</h1>
-            <div id="cards-container" class="row justify-content-center">
-                <!-- JavaScript genererar kort här -->
+        <h1 class="rubriker-center">
+            perfumes can be divided into four different categories
+        </h1>
+
+        <div class="container text-center">
+            <div class="row align-items-end">
+                <!-- Spicy -->
+                <div class="col-6" id="spicy-div">
+                    <h3>spicy</h3>
+                    <p>
+                        fragrance notes such as cinnamon, pepper, tobacco and
+                        leather, which give a spicy sensation
+                    </p>
+                </div>
+
+                <!-- Floral -->
+                <div class="col-6" id="floral-div">
+                    <h3>floral</h3>
+                    <p>
+                        fragrance notes such as rose, jasmine, and ylang-ylang,
+                        which give a floral character
+                    </p>
+                </div>
+
+                <!-- Sweet -->
+                <div class="col-6" id="sweet-div">
+                    <h3>sweet</h3>
+                    <p>
+                        sweeter fragrance notes such as vanilla, caramel,
+                        chocolate and tonka bean
+                    </p>
+                </div>
+
+                <!-- Fruty -->
+                <div class="col-6" id="fruty-div">
+                    <h3>fruty</h3>
+                    <p>
+                        fruity fragrance notes such as apple, citrus, berry and
+                        blackcurrant
+                    </p>
+                </div>
             </div>
         </div>
 
-        <!-- end test bootstrap cards -->
+        <!-- spicy -->
+        <div class="container my-4">
+            <h2 class="rubriker-center">spicy</h2>
 
-        <!--  <div class="container">
-            <h1 class="my-8">perfumes</h1>
-            <p class="rubriker">text om hur man väljer sin doft etc</p>
+            <div id="spicy-container"></div>
+        </div>
 
-            <div id="cards-container" class="row"></div>
-        </div> -->
+        <!-- floral -->
 
-        <!-- Länka till JavaScript-filen -->
+        <div class="container my-4">
+            <h2 class="rubriker-center">floral</h2>
+
+            <div id="floral-container"></div>
+        </div>
+
+        <!-- sweet -->
+        <div class="container my-4">
+            <h2 class="rubriker-center">sweet</h2>
+
+            <div id="sweet-container"></div>
+        </div>
+
+        <!-- fruty -->
+        <div class="container my-4">
+            <h2 class="rubriker-center">fruty</h2>
+
+            <div id="fruty-container"></div>
+        </div>
+
+        <!-- end bootstrap cards -->
+
+        <!-- länk till JavaScript-filen och bootstrap -->
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="index.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -111,22 +129,26 @@
             crossorigin="anonymous"
         ></script>
 
-        <!-- <h2 class="rubriker">top notes</h2>
-
-        <div class="toppnoter">
-            <button>aldehydes</button>
-            <button>bergamot</button>
-            <button>citrus</button>
-            <button>apple</button>
-            <button>pear</button>
-            <button>pomegranate</button>
-            <button>strawberry</button>
-            <button>mynta</button>
-            <button>pepper</button>
-            <button>violet</button>
-            <button>sage</button>
-        </div> -->
-
-        <footer></footer>
+        <footer>
+            <div class="container">
+                <div id="footer-text">
+                    <div class="footer-about">
+                        <h2><strong>about</strong></h2>
+                        <li><a href=""></a>boutiques</li>
+                        <li><a href=""></a>locations</li>
+                    </div>
+                    <div class="footer-costumer">
+                        <h2><strong>costumer service</strong></h2>
+                        <li><a href=""></a>boutiques</li>
+                        <li><a href=""></a>locations</li>
+                    </div>
+                    <div class="footer-contact">
+                        <h2><strong>contact us</strong></h2>
+                        <li><a href=""></a>boutiques</li>
+                        <li><a href=""></a>locations</li>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

@@ -1,43 +1,37 @@
-/* fetch('index.json')
-    .then((response) => response.json()) //ta bort detta?
-    .then((result) => {
-        console.log(result);
-    }); */
-
-// URL till json
+// URL till JSON-filen
 const apiUrl = 'index.json';
 
-// Funktion för att hämta data och skapa kort
+// funktion för att hämta data och skapa kort
 async function fetchAndDisplayCards() {
     try {
-        // Hämta data från json-fil
+        // hämta data från JSON-filen
         const response = await fetch(apiUrl);
         const data = await response.json();
 
-        // Sökvägen till bilderna
+        // sökväg till bilderna
         const basePath = '/Media/';
 
-        // Hitta container där korten ska visas
-        const container = document.getElementById('cards-container');
-        /* const container = document.getElementById('cards-row'); */
+        // hämtar de olika kategoricontainrarna
+        const floralContainer = document.getElementById('floral-container');
+        const frutyContainer = document.getElementById('fruty-container');
+        const spicyContainer = document.getElementById('spicy-container');
+        const sweetContainer = document.getElementById('sweet-container');
 
-        // Gå igenom varje parfym och skapa kort för varje
+        // gå igenom varje parfym och skapa kort för varje
         data.forEach((item) => {
-            // Generera URL för bild om bild finns
+            // skapar URL för bild om bild finns
             const imageUrl = item.bild ? basePath + item.bild : '';
 
-            // Skapa en div för kortet
+            // skapar en div för kortet
             const card = document.createElement('div');
-
-            /* card.className = 'col'; */ // Bootstrap-klasser för layout
             card.className = 'col-md-3 mb-3';
 
-            // Fyll kortet med parfymens bild, namn och doftnoter
+            // kortens innehåll
             card.innerHTML = `
-                <div class="card h-100">
+                <div class="card h-100" class="mobile-card">
                     ${
                         imageUrl
-                            ? `<img src="${imageUrl}" class="card-img-top" class="my-card-img" alt="${item.parfym} bild">`
+                            ? `<img src="${imageUrl}" class="card-img-top" alt="${item.parfym} bild" onerror="this.onerror=null; this.src='Media/Default.jpg'">`
                             : ''
                     }
                     <div class="card-body">
@@ -49,13 +43,21 @@ async function fetchAndDisplayCards() {
                 </div>
             `;
 
-            // Lägg till kortet i container
-            container.appendChild(card);
+            // lägg till kortet i rätt kategori
+            if (item.kategori === 'floral') {
+                floralContainer.appendChild(card);
+            } else if (item.kategori === 'fruty') {
+                frutyContainer.appendChild(card);
+            } else if (item.kategori === 'spicy') {
+                spicyContainer.appendChild(card);
+            } else if (item.kategori === 'sweet') {
+                sweetContainer.appendChild(card);
+            }
         });
     } catch (error) {
-        console.error('Error fetching data:', error); // Om något går fel
+        console.error('Error fetching data:', error); // om något skulle gå fel
     }
 }
 
-// Kör funktionen när sidan laddas
+// kör funktionen när sidan laddas
 document.addEventListener('DOMContentLoaded', fetchAndDisplayCards);

@@ -1,48 +1,56 @@
 [
     {
         "id": 1,
+        "kategori": "floral",
         "bild": "1.jpg",
         "parfym": "Chanel No. 5",
         "doftnot": ["aldehydes", "jasmine", "neroli", "sandalwood", "vanilla"]
     },
     {
         "id": 2,
+        "kategori": "floral",
         "bild": "2.jpg",
         "parfym": "Dior J'adore",
         "doftnot": ["ylang-ylang", "rose", "jasmine", "musk", "bergamot"]
     },
     {
         "id": 3,
+        "kategori": "fruty",
         "bild": "3.jpg",
         "parfym": "Giorgio Armani Si",
         "doftnot": ["black currant", "rose", "freesia", "patchouli", "vanilla"]
     },
     {
         "id": 4,
+        "kategori": "spicy",
         "bild": "4.jpg",
         "parfym": "Yves Saint Laurent Black Opium",
         "doftnot": ["coffee", "pear", "jasmine", "vanilla", "cedarwood"]
     },
     {
         "id": 5,
+        "kategori": "fruty",
         "bild": "5.jpg",
         "parfym": "Marc Jacobs Daisy",
         "doftnot": ["strawberry", "violet leaf", "jasmine", "vanilla", "musk"]
     },
     {
         "id": 6,
+        "kategori": "floral",
         "bild": "6.jpg",
         "parfym": "Lancôme La Vie Est Belle",
         "doftnot": ["pear", "iris", "orange blossom", "jasmine", "patchouli"]
     },
     {
         "id": 7,
+        "kategori": "fruty",
         "bild": "7.png",
         "parfym": "Chanel Coco Mademoiselle",
         "doftnot": ["orange", "mandarin", "jasmine", "patchouli", "vanilla"]
     },
     {
         "id": 8,
+        "kategori": "sweet",
         "bild": "8.jpg",
         "parfym": "Tom Ford Black Orchid",
         "doftnot": [
@@ -55,36 +63,42 @@
     },
     {
         "id": 9,
+        "kategori": "spicy",
         "bild": "9.png",
         "parfym": "Dior Sauvage",
         "doftnot": ["bergamot", "pepper", "lavender", "ambroxan", "vanilla"]
     },
     {
         "id": 10,
+        "kategori": "floral",
         "bild": "10.jpg",
         "parfym": "Viktor & Rolf Flowerbomb",
         "doftnot": ["bergamot", "rose", "jasmine", "patchouli", "vanilla"]
     },
     {
         "id": 11,
+        "kategori": "spicy",
         "bild": "11.jpg",
         "parfym": "Hermès Terre d'Hermès",
         "doftnot": ["orange", "pepper", "patchouli", "cedarwood", "benzoin"]
     },
     {
         "id": 12,
+        "kategori": "floral",
         "bild": "12.jpg",
         "parfym": "Gucci Bloom",
         "doftnot": ["tuberose", "jasmine", "rangoon creeper", "musk", "iris"]
     },
     {
         "id": 13,
+        "kategori": "fruty",
         "bild": "13.jpg",
         "parfym": "Dolce & Gabbana Light Blue",
         "doftnot": ["citrus", "apple", "bamboo", "jasmine", "cypress"]
     },
     {
         "id": 14,
+        "kategori": "spicy",
         "bild": "14.jpg",
         "parfym": "Calvin Klein Euphoria",
         "doftnot": [
@@ -97,85 +111,113 @@
     },
     {
         "id": 15,
+        "kategori": "spicy",
         "bild": "15.jpg",
         "parfym": "Jean Paul Gaultier Le Male",
         "doftnot": ["lavender", "mint", "cinnamon", "vanilla", "cedarwood"]
     },
     {
         "id": 16,
+        "kategori": "fruty",
         "bild": "16.jpg",
         "parfym": "Creed Aventus",
         "doftnot": ["pineapple", "black currant", "bergamot", "apple", "musk"]
     },
     {
         "id": 17,
+        "kategori": "fruty",
         "bild": "17.jpg",
         "parfym": "Versace Eros",
         "doftnot": ["mint", "apple", "citrus", "tonka beans", "vanilla"]
     },
     {
         "id": 18,
+        "kategori": "spicy",
         "bild": "18.png",
         "parfym": "Bvlgari Man in Black",
         "doftnot": ["rum", "cinnamon", "tobacco", "leather", "amber"]
     },
     {
         "id": 19,
+        "kategori": "fruty",
+        "bild": "19.jpg",
         "parfym": "Burberry Her",
         "doftnot": ["strawberry", "raspberry", "cherry", "musk", "patchouli"]
     },
     {
         "id": 20,
+        "kategori": "spicy",
+        "bild": "20.jpg",
         "parfym": "Paco Rabanne 1 Million",
         "doftnot": ["cinnamon", "blood orange", "amber", "patchouli", "leather"]
     },
     {
         "id": 21,
+        "kategori": "sweet",
+        "bild": "21.jpg",
         "parfym": "Prada Candy",
         "doftnot": ["musk", "vanilla", "caramel", "benzoin resin", "citrus"]
     },
     {
         "id": 22,
+        "kategori": "floral",
+        "bild": "22.jpg",
         "parfym": "Narciso Rodriguez For Her",
         "doftnot": ["musk", "jasmine", "orange blossom", "vanilla", "patchouli"]
     },
     {
         "id": 23,
+        "kategori": "spicy",
+        "bild": "23.jpg",
         "parfym": "Byredo Gypsy Water",
         "doftnot": ["bergamot", "citrus", "pepper", "vanilla", "sandalwood"]
     },
     {
         "id": 24,
+        "kategori": "spicy",
+        "bild": "24.jpg",
         "parfym": "Le Labo Santal 33",
         "doftnot": ["sandalwood", "cypress", "leather", "musk", "iris"]
     },
     {
         "id": 25,
+        "kategori": "spicy",
+        "bild": "25.jpg",
         "parfym": "Chanel Bleu de Chanel",
         "doftnot": ["citrus", "pepper", "mint", "tonka beans", "amber"]
     },
     {
         "id": 26,
+        "kategori": "floral",
+        "bild": "26.jpg",
         "parfym": "Mugler Alien",
         "doftnot": ["jasmine", "amber", "wood notes", "musk", "cashmeran"]
     },
     {
         "id": 27,
+        "kategori": "spicy",
+        "bild": "27.jpg",
         "parfym": "Maison Margiela Replica Jazz Club",
         "doftnot": ["rum", "tobacco", "vanilla", "leather", "citrus"]
     },
     {
         "id": 28,
+        "kategori": "spicy",
+        "bild": "28.jpg",
         "parfym": "Jo Malone Wood Sage & Sea Salt",
         "doftnot": ["sage", "sea salt", "amber", "lemon", "musk"]
     },
     {
         "id": 29,
+        "kategori": "floral",
+        "bild": "29.jpg",
         "parfym": "Dior Homme Intense",
         "doftnot": ["iris", "ambrette", "lavender", "musk", "cedarwood"]
     },
     {
         "id": 30,
+        "kategori": "fruty",
+        "bild": "30.jpg",
         "parfym": "Chloé Nomade",
         "doftnot": ["mirabelle", "freesia", "musk", "oak moss", "amber"]
     }

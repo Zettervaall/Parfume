@@ -12,7 +12,6 @@
     overflow-x: hidden; /* Gör så att sidan inte kan scrolla i sidled */
 }
 
-/* Grundinställningar för body och bakgrund */
 html,
 body {
     margin: 0;
@@ -30,7 +29,7 @@ body {
 } */
 
 body > header > nav > div > a:nth-child(1) > img {
-    height: 80px;
+    height: 100px;
     width: auto;
     margin: 8px 0 5px 0;
 }
@@ -50,7 +49,7 @@ body > header > nav > div > a:nth-child(1) > img {
     text-decoration: none; /* Tar bort understrykningen */
     color: black; /* Färg på texten */
     font-family: MyFont2;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .navBar a:hover {
@@ -97,10 +96,10 @@ body > div > h1 {
     background-color: black;
 }
 
-#quote-dior {
+.quote-dior {
     display: flex;
     margin: auto;
-    height: 300px;
+    height: 400px;
     width: auto;
 }
 
@@ -126,15 +125,125 @@ body > div.container {
     border-radius: 10px;
 }
 
+/* body > h1:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    font-family: MyFont;
+    margin-top: 100px;
+} */
+
+.rubriker-center {
+    display: flex;
+    justify-content: center;
+    font-family: MyFont2;
+    margin-top: 100px;
+}
+
+body > h1:nth-child(3) {
+    margin-bottom: 100px;
+}
+
+.col-6 {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 30px;
+    margin: 40px auto;
+    background-color: beige;
+}
+
+.col-6 > h3 {
+    margin-top: 100px;
+    font-family: MyFont2;
+    font-size: 50px;
+}
+
+.col-6 > p {
+    font-family: MyFont2;
+    font-size: 25px;
+    padding: 20px;
+    margin: auto;
+}
+
+/* funkar ej, varför? */
+#floral-div {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(249, 243, 233, 0.466);
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(43, 43, 41, 0.15);
+}
+
+#sweet-div {
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+
+    background-color: rgba(249, 238, 244, 0.515);
+
+    box-shadow: 0 2px 5px rgba(43, 43, 41, 0.15);
+}
+
+#spicy-div {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(249, 231, 220, 0.445);
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(43, 43, 41, 0.15);
+}
+
+#fruty-div {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255, 233, 227, 0.364);
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(43, 43, 41, 0.15);
+}
+
 /* Kortens layout och styling */
-#cards-container {
+#floral-container {
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
     padding: 20px;
     border-radius: 20px;
-    background-color: #f5f3ef; /* Bakgrundsfärg runt korten */
+    background-color: rgba(249, 243, 233, 0.466);
+}
+
+#fruty-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 233, 227, 0.598);
+}
+
+#spicy-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(249, 231, 220, 0.445);
+}
+
+#sweet-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(249, 238, 244, 0.515);
 }
 
 .card {
@@ -165,7 +274,23 @@ body > div.container {
 .contactUs {
     margin: auto;
     width: 500px;
+    margin-bottom: 10px;
+    font-family: MyFont2;
+}
+
+#sendButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     margin-bottom: 100px;
+    border-radius: 5px;
+    border: 2px;
+    color: rgb(0, 0, 0);
+    background-color: #e9dfe5;
+    box-shadow: 0 2px 5px rgba(174, 172, 169, 0.307);
+    width: 80px;
+    font-family: MyFont2;
 }
 
 #appleCenter {
@@ -186,16 +311,25 @@ footer {
 
 #footer-text {
     font-family: MyFont2;
+    font-size: 20px;
     text-decoration: none;
     list-style: none;
     display: flex;
     align-items: start;
 }
 
+#footer-text > li {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
 #headerLogo {
-    width: 1200px;
+    width: 1500px;
     height: auto;
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
 }
@@ -219,4 +353,316 @@ footer {
 
 .carousel-control-next {
     margin-right: -80px;
+}
+
+#aboutUs-text {
+    font-family: MyFont2;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 1000px;
+    font-size: 20px;
+
+    margin-bottom: 200px;
+}
+
+.myFontApple {
+    font-family: MyFont2;
+}
+
+@media (min-width: 767px) {
+    /* CONTACT */
+
+    #contactText {
+        font-size: 80px;
+        margin-top: 70px;
+    }
+
+    .contactUs {
+        width: 1000px;
+        margin-bottom: 10px;
+    }
+
+    #exampleFormControlTextarea1 {
+        height: 300px;
+    }
+
+    #exampleFormControlInput1 {
+        height: 100px;
+        font-size: 35px;
+        margin-bottom: 35px;
+    }
+
+    .form-label {
+        font-size: 30px;
+    }
+
+    #sendButton {
+        width: 200px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .section {
+        text-align: center;
+    }
+
+    .section img {
+        max-width: 100%; /* Återställ bildstorlek */
+        margin: 0; /* Ta bort centrering */
+    }
+
+    body > div.container > div:nth-child(1) > div.col-md-6.order-md-2 > p {
+        font-size: 25px;
+    }
+
+    body > div.container > div:nth-child(1) > div.col-md-6.order-md-2 > h2 {
+        font-size: 35px;
+    }
+    body > div.container > div:nth-child(2) > div:nth-child(1) > p {
+        font-size: 25px;
+    }
+
+    body > div.container > div:nth-child(2) > div:nth-child(1) > h2 {
+        font-size: 35px;
+    }
+    body > div.container > div:nth-child(3) > div.col-md-6.order-md-2 > p {
+        font-size: 25px;
+    }
+
+    body > div.container > div:nth-child(3) > div.col-md-6.order-md-2 > h2 {
+        font-size: 35px;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 50px;
+        background-color: #e9e4df;
+        /* opacity: 0.8; */
+    }
+
+    #footer-text {
+        font-family: MyFont2;
+        font-size: 20px;
+        flex-direction: row;
+        gap: 150px;
+        justify-content: center;
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    #footer-text > li {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 767px) {
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff; /* Bakgrundsfärg för hela sidan */
+    }
+
+    body > header > nav > div > a:nth-child(1) > img {
+        height: 70px;
+        width: auto;
+        margin: 8px 0 5px 0;
+    }
+    .navBar {
+        top: 0;
+        position: fixed;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        z-index: 10000; /* Ger navbaren högre prioritet så att den är över korten */
+        gap: 20px;
+    }
+
+    .navBar a {
+        text-decoration: none; /* Tar bort understrykningen */
+        color: black; /* Färg på texten */
+        font-family: MyFont2;
+        font-size: 20px;
+    }
+
+    #headerLogo {
+        display: flex;
+        height: auto;
+        width: 100%;
+        margin-top: 80px;
+        padding: 0 10px 0 10px;
+    }
+
+    .rubriker-center {
+        display: flex;
+        justify-content: center;
+        /* margin-left: 20px; */
+        margin-bottom: 5px;
+    }
+
+    .col-6 {
+        margin-bottom: 10px;
+    }
+
+    .col-6 > h3 {
+        font-family: MyFont2;
+        font-size: 27px;
+        margin: auto;
+        margin-bottom: 1px;
+    }
+
+    .col-6 > p {
+        font-family: MyFont2;
+        font-size: 10px;
+        margin: auto;
+        padding-top: 0;
+    }
+
+    #floral-div {
+        flex-direction: column;
+        display: flex;
+        height: 150px;
+        width: 150px;
+        margin: auto;
+    }
+    #spicy-div {
+        flex-direction: column;
+        display: flex;
+        height: 150px;
+        width: 150px;
+        margin: auto;
+    }
+    #sweet-div {
+        flex-direction: column;
+        display: flex;
+        height: 150px;
+        width: 150px;
+        margin: auto;
+    }
+    #fruty-div {
+        flex-direction: column;
+        display: flex;
+        height: 150px;
+        width: 150px;
+        margin: auto;
+    }
+
+    body > div.container.text-center > div {
+        height: 400px;
+        width: auto;
+        margin: 5px;
+    }
+
+    body > h1 {
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* .mobile-card {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100px;
+        width: auto;
+    } */
+
+    /* .card-img-top {
+        height: 20px;
+        width: auto;
+    } */
+
+    body > img.quote-dior {
+        height: 100px;
+        margin-right: 20px;
+    }
+
+    body > img:nth-child(4) {
+        margin-bottom: 35px;
+    }
+
+    #rubrik-notes {
+        font-size: 50px;
+        margin-bottom: 35px;
+    }
+
+    .section {
+        text-align: center; /* Centrera text och bild */
+        margin-bottom: 2rem; /* Ge sektioner lite luft */
+    }
+
+    .section img {
+        max-width: 90%; /* Gör bilderna mindre på små skärmar */
+        margin: 1rem auto; /* Lägg till marginal och centrera */
+    }
+
+    .section h2 {
+        font-size: 1.5rem; /* Minska rubrikstorlek */
+    }
+
+    .section p {
+        font-size: 1rem; /* Anpassa textstorlek */
+    }
+
+    /* body > div.container > div:nth-child(1) > div.col-md-6.order-md-1 {
+        display: flex;
+    }
+
+    body > div.container > div:nth-child(1) > div.col-md-6.order-md-1 > img {
+        display: flex;
+        height: 150px;
+        width: auto;
+    }
+
+    body > div.container > div:nth-child(1) > div.col-md-6.order-md-2 > p {
+        width: 100px;
+        height: auto;
+    } */
+
+    /* CONTACT */
+
+    #contactText {
+        margin: 40px auto;
+    }
+
+    body > div.contactUs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+        width: 300px;
+    }
+
+    #exampleFormControlInput1 {
+        width: 300px;
+    }
+
+    #exampleFormControlTextarea1 {
+        width: 300px;
+    }
+
+    /* FOOTER */
+
+    #footer-text {
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    #footer-text > li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }
